@@ -1,0 +1,13 @@
+package com.selenium.webdriver;
+
+public class LiciousHomePageTest {
+
+	public static void main(String[] args) {
+		LiciousHomePage p = new LiciousHomePage();
+		System.out.println(p.baseURL);
+		p.setup();
+		//p.links();
+		p.categoryLinks();
+		p.tearDown();
+	}
+};

@@ -1,0 +1,13 @@
+package com.java.practice;
+
+import org.testng.annotations.Test;
+
+public class VariableTest {
+	
+	@Test
+	public static void main(String[] args) {
+		Variable v = new Variable();
+		//v.setData();
+		v.printData();
+	}
+};

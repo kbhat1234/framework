@@ -1,0 +1,21 @@
+package com.selenium.webdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ChickenCategoryProductListing {
+	
+    WebDriver driver = null;
+	public void productListing() throws InterruptedException {
+		driver.findElement(By.xpath("//button[@data-index='0']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//a[@class='cart loaded']")).click();
+		Thread.sleep(3000);
+	}
+	
+	public void getText() {
+		String txt = driver.findElement(By.xpath("//a[@data-index='3']")).getText();
+		System.out.println(txt);
+	}
+};

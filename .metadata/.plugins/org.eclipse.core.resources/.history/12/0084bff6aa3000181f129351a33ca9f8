@@ -1,0 +1,10 @@
+package api.restassured;
+
+import org.json.JSONException;
+
+public class GetCountriesTest {
+	public static void main(String args[]) throws JSONException {
+		CountriesGetRestAssured c1 = new CountriesGetRestAssured();
+		c1.getRequestFindCapital();
+	}
+};

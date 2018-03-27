@@ -1,0 +1,146 @@
+package com.java.practice;
+
+public class Operators {
+	
+	void unaryOperation() {
+		System.out.println("Unary operation");
+		int x=10;
+		System.out.println(x++);
+		System.out.println(x);
+		System.out.println(++x);
+		System.out.println(x);
+		System.out.println(x--);
+		System.out.println(x);
+		System.out.println(--x);
+		System.out.println(x);
+	}
+	
+	void unaryAddition() {
+		int x=10;
+		int y=20;
+		System.out.println("Unary addition");
+		int z = x++ + y++;
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		
+		int m = ++x + ++y;
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(m);
+	}
+	
+	void unaryOperators() {
+		System.out.println("unary operations");
+		int a=10;
+		int b=-20;
+		boolean c=true;
+		boolean d=false;
+		
+		System.out.println("value of a is "+a);
+		System.out.println("value of ~a is "+~a);
+		System.out.println("value of b is "+b);
+		System.out.println("value of ~b is "+~b);
+		System.out.println("value of c is "+c);
+		System.out.println("value of !c is "+!c);
+		System.out.println("value of d is "+d);
+		System.out.println("value of !d is "+!d);
+	}
+	
+	void airthmeticOperation() {
+		System.out.println("airthmetic operation");
+		int a=10, b=8;
+		int add, diff, mul, div,mod;
+		add=a+b;
+		diff=a-b;
+		mul=a*b;
+		div=a/b;
+		mod=a%b;
+		
+		System.out.println("addition is "+add);
+		System.out.println("substraction is "+diff);
+		System.out.println("multiplication is "+mul);
+		System.out.println("division is "+div);
+		System.out.println("modulus is "+mod);
+	}	
+	
+	void expr() {
+		System.out.println("Expression");
+		int a=10, b=5;
+		int exp;
+		exp=a/b+a*b+b/3;
+		System.out.println(exp);
+	}
+	
+	void leftshiftOperator() {
+		System.out.println("left shift operation");
+		System.out.println(10<<2); //10*2^2 = 40
+		System.out.println(10<<3); //10*2^3 = 80
+		System.out.println(20<<4);
+	}
+	
+	void rightshiftOperator() {
+		System.out.println("right shift operation");
+		System.out.println(10>>2); //10/2^2 = 2
+		System.out.println(20>>2); //20/2^2 = 5
+	}
+	
+	void rightOperator() {
+		System.out.println(20>>2);//for positive number >> and >>> works same 20/2^2=5
+		System.out.println(20>>>2);//for positive number >> and >>> works same 20/2^2=5
+		System.out.println(-20>>2);// for negative number >> works same but with negative sign -20/2^2=-5
+		System.out.println(-20>>>2);// for negative number >>> changes the parity bit (MSB) to 0 -20/2^2=1073741819
+	}
+	
+	void logicalAndBitwiseAnd() {
+		int a=10, b=5, c=20;
+		
+		System.out.println(a<b && a>b);
+		System.out.println(a);
+		System.out.println(c>a && b<c);
+		System.out.println(c);
+		System.out.println(b);
+		
+		System.out.println(a<b & a>b);
+		System.out.println(c>a & b<c);
+	}
+	
+	void logicalOrBitwiseOr() {
+		int a=10, b=5, c=20;
+		
+		System.out.println(a<b || a>b);
+		System.out.println(c>a || b<c);
+		
+		System.out.println(a<b | a>b);
+		System.out.println(c>a | b<c);
+	}
+	
+	void ternaryOperator() {
+		int a=20, b=30;
+		int min, max, equal;
+		min=(a<b)?a:b;
+		max=(a>b)?a:b;
+		equal=(a==b)?a:b;
+		System.out.println(min);
+		System.out.println(max);
+		System.out.println(equal);
+	}
+	
+	void assignmentOperator() {
+		int a=10, b=20;
+		System.out.println(a+=4);//a=a+4 (a=10+4=14)
+		System.out.println(b-=3);//b=b-3 (b=20-3=17)
+		System.out.println(a+=3);//a=a+3 (a=14+3=17)
+		System.out.println(a-=4);//a=a-4 (a=17-4=13)
+		System.out.println(a*=2);//a=a*2 (a=13*2=26)
+		System.out.println(a/=4);//a=a/4 (a=26/4=6)
+	}
+	
+	void assignmentOperatortShort() {
+		short a=10;
+		short b=9;
+		a=(short)(a+b);//19 which is int now been converted to short
+		System.out.println(a);
+		
+	}
+};

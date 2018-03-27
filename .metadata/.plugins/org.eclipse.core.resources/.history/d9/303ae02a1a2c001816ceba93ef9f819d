@@ -1,0 +1,14 @@
+package com.java.practice;
+
+public class Variable {
+	String name="karthik";
+	void setData() {
+		int a;
+		a=10;
+		System.out.println("The value of a is "+a);
+	}
+	void printData() {
+		setData();
+		System.out.println(name);
+	}
+};

@@ -1,0 +1,87 @@
+package com.java.practice;
+
+public class Operators {
+	
+	void unaryOperation() {
+		System.out.println("Unary operation");
+		int x=10;
+		System.out.println(x++);
+		System.out.println(x);
+		System.out.println(++x);
+		System.out.println(x);
+		System.out.println(x--);
+		System.out.println(x);
+		System.out.println(--x);
+		System.out.println(x);
+	}
+	
+	void unaryAddition() {
+		int x=10;
+		int y=20;
+		System.out.println("Unary addition");
+		int z = x++ + y++;
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		
+		int m = ++x + ++y;
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(m);
+	}
+	
+	void unaryOperators() {
+		System.out.println("unary operations");
+		int a=10;
+		int b=-20;
+		boolean c=true;
+		boolean d=false;
+		
+		System.out.println("value of a is "+a);
+		System.out.println("value of ~a is "+~a);
+		System.out.println("value of b is "+b);
+		System.out.println("value of ~b is "+~b);
+		System.out.println("value of c is "+c);
+		System.out.println("value of !c is "+!c);
+		System.out.println("value of d is "+d);
+		System.out.println("value of !d is "+!d);
+	}
+	
+	void airthmeticOperation() {
+		System.out.println("airthmetic operation");
+		int a=10, b=8;
+		int add, diff, mul, div,mod;
+		add=a+b;
+		diff=a-b;
+		mul=a*b;
+		div=a/b;
+		mod=a%b;
+		
+		System.out.println("addition is "+add);
+		System.out.println("substraction is "+diff);
+		System.out.println("multiplication is "+mul);
+		System.out.println("division is "+div);
+		System.out.println("modulus is "+mod);
+	}	
+	
+	void expr() {
+		System.out.println("Expression");
+		int a=10, b=5;
+		int exp;
+		exp=a/b+a*b+b/3;
+		System.out.println(exp);
+	}
+	
+	void leftshiftOperator() {
+		System.out.println("left shift operation");
+		System.out.println(10<<2); //10*2^2 = 40
+		System.out.println(10<<3); //10*2^3 = 80
+		System.out.println(20<<4);
+	}
+	
+	void rightshiftOperator() {
+		System.out.println("right shift operation");
+		System.out.println(10>>2); //10/2^2 = 2
+		System.out.println(20>>2); //20/2^2 = 5
+	}
+};

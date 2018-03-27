@@ -1,0 +1,8 @@
+package api.restassured;
+
+public class GetCountriesTest {
+	public static void main(String args[]) {
+		CountriesGetRestAssured c1 = new CountriesGetRestAssured();
+		c1.getRequestFindCapital();
+	}
+};

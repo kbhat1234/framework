@@ -1,0 +1,23 @@
+package com.java.practice;
+
+public class Operators {
+	
+	void unaryOperation() {
+		System.out.println("Unary operation");
+		int x=10;
+		System.out.println(x++);
+		System.out.println(x);
+		System.out.println(++x);
+		System.out.println(x);
+		System.out.println(x--);
+		System.out.println(x);
+		System.out.println(--x);
+		System.out.println(x);
+	}
+	void unaryAddition() {
+		int x=10;
+		int y=20;
+		int z = x++ + y++;
+		System.out.println(z);
+	}
+};

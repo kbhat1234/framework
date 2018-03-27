@@ -1,0 +1,9 @@
+package api.restassured;
+
+import org.json.JSONException;
+
+public class GetCountriesTest extends CountriesGetRestAssured {
+	
+		CountriesGetRestAssured c1 = new CountriesGetRestAssured();
+		c1.getRequestFindCapital();
+};

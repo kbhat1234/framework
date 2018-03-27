@@ -1,0 +1,11 @@
+package com.java.practice;
+
+public class VariableTest {
+	
+	public static void main(String[] args) {
+		Variable v = new Variable();
+		//v.setData();
+		v.printData();
+		v.add(10, 20);
+	}
+};

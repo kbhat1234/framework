@@ -1,0 +1,18 @@
+package com.java.practice;
+
+public class Variable {
+	String name="karthik"; //instance variable
+	static int b=20; //static variable
+	void setData() {
+		int a; //local variable
+		a=10;
+		float f=a;
+		System.out.println("The value of a is "+a);
+		System.out.println("The value of f is "+f);
+	}
+	void printData() {
+		setData();
+		System.out.println(name);
+		System.out.println(b);
+	}
+};

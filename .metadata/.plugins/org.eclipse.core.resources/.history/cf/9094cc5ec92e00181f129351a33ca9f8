@@ -1,0 +1,15 @@
+package com.selenium.webdriver;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CloseAll {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\karthik.k\\core-java\\selenium-webdriver\\webdriver\\drivers\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.navigate().to("https://guru99.com");
+		driver.navigate().refresh();
+		
+	}
+};
